@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  min-width: 320px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  padding: 10px;
+  border-top: 2px solid #0b3e3e;
+  
+}
+
+.container > .content {
+  margin: 0 auto;
+}
+
+.content > header {
+  display:flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 5px;
+  width: 302px;
+  height: 56px;
+}
+
+header > img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+header > h1{
+  font-size: 22px;
+  letter-spacing: 6%;
+  /* color: #fff; */
+  text-align: justify;
+}
+
+.content > .form {
+  margin-top: 50px;
+  width: 302px;
+  margin-left: 10px;
+  margin-bottom: 23px;
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > label {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 6px;  
+  width: 320px;
+}
+
+form > input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #cccf0f;
+  outline: none;
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+form > button{
+  width: 100%;
+  background-color: #cccf0f;
+  margin-top: 10px;
+  color: #000;
+  border:none;
+  cursor: pointer;
+  padding: 15px 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* .resultado{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 302px;
+  background-color: #cccf0f;
+  color: #000;
+  padding: 14px 23px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+}
+
+.resultado span{
+  font-size: 16px;
+  letter-spacing: 6%;
+}
+
+.resultado #mediaFinal{
+  font-size: 32px;
+}
+
+.resultado p{
+  font-size: 12px;
+}
+
+.oculto{
+  display: none;
+}
+
+.footer p{
+  color: #ffffff3a;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+} */

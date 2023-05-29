@@ -8,6 +8,49 @@
   <title>Calculadora de Média</title>
 </head>
 <body>
+  <div class="container">
+    <div class="content">
+      <header>
+        <img src="" alt="Icone calculadora">
+        <h1>
+          <span>CALCULADORA</span>
+          <span>MÉDIA - UNIASSELVI</span>
+        </h1>
+      </header>
+
+      <div class="form">
+        <form id="form">
+          <label for="entradaA1">Avaliação I:</label>
+            <input type="number" id="entradaA1" placeholder="Peso 1.50"/>
+
+            <label for="entradaA2">Avaliação II:</label>
+            <input type="number" id="entradaA2" placeholder="Peso 1.50"/>
+
+            <label for="entradaA3">Avaliação Final (Discursiva):</label>
+            <input type="number" id="entradaA3" placeholder="Peso 4.0"/>
+
+            <label for="entradaA4">Avaliação Final (Objetiva):</label>
+            <input type="number" id="entradaA4" placeholder="Peso 3.0"/>
+
+          <button id="calular">Calcular Média</button>
+        </form>
+      </div>
+
+      <div class="resultado oculto" id="resultado">
+        <span id="media">Média Final Calculada</span>
+        <span id="media-final"></span>
+        <p id="aviso">Mínimo para ser aprovado(a) é 7</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- <footer class="footer">
+    <p>
+      Desenvolvido por Tauã Lima - 2023
+    </p>
+  </footer> -->
 
   <script src="./script.js"></script>
 </body>
