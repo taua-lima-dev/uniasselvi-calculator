@@ -6,6 +6,7 @@
 }
 
 body {
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -24,8 +25,8 @@ body {
   padding: 10px;
   border-top: 2px solid #0b3e3e;
   box-shadow: rgba(9, 9, 9, 0.2) 0px 60px 40px -7px;
-  
-  
+  position: absolute;
+  z-index: 0;
 }
 
 .container > .content {
@@ -103,8 +104,6 @@ form > button:hover{
   background-color: #a9ac08;
 }
 
-
-
 .resultado{
   display: flex;
   flex-direction: column;
@@ -116,7 +115,11 @@ form > button:hover{
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
   border: 0px solid transparent;
-  border-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: 40%;
+  right: 12.2%
 }
 
 .resultado span{
@@ -133,7 +136,7 @@ form > button:hover{
 }
 
 .oculto{
-  display: none;
+  /* display: none; */
 }
 
 .footer > p{
