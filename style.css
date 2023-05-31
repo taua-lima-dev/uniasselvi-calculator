@@ -6,7 +6,6 @@
 }
 
 body {
-  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,18 +19,17 @@ body {
   margin: 0 auto;
   width: 400px;
   min-width: 320px;
+  height: 430px;
   border: 0px solid transparent;
   border-radius: 10px;
   padding: 10px;
   border-top: 2px solid #0b3e3e;
   box-shadow: rgba(9, 9, 9, 0.2) 0px 60px 40px -7px;
   position: absolute;
-  z-index: 0;
 }
 
 .container > .content {
   margin: 0 auto;
-  display: absolute;
 }
 
 .content > header {
@@ -118,25 +116,27 @@ form > button:hover{
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  top: 40%;
-  right: 12.2%
+  top: 45%;
+  right: 12.2%;
+  z-index: 1;
+
 }
 
 .resultado span{
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: 6%;
 }
 
 .resultado #mediaFinal{
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .resultado p{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .oculto{
-  /* display: none; */
+  display: none;
 }
 
 .footer > p{
