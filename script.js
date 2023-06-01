@@ -15,42 +15,48 @@ enviar.addEventListener("click", function (e) {
   e.preventDefault();
   
   if (
-    entradaA1.value == "" ||
-    entradaA2.value == "" ||
-    entradaA3.value == "" ||
-    entradaA4.value == ""
-  ) {
+    entradaA1.value == "" || entradaA2.value == "" || entradaA3.value == "" || entradaA4.value == "") {
     alert("Preencha todos os campos");
   } else {
-     mediaFinal =
-    (
-      (Number(entradaA1.value) * 0.15) +
-      (Number(entradaA2.value) * 0.15) +
-      (Number(entradaA3.value) * 0.4) +
-      (Number(entradaA4.value) * 0.3)
-    ).toFixed(2)
+    mediaBase()
     escondido.classList.remove("oculto");
     removeContent()
     
   }
 
   if (mediaFinal < 7){
-    media.style.color = "#FF0000";
-    resultado.innerText = `${mediaFinal}`;
-    resultado.style.color = "#FF0000";
-    aviso.innerHTML = `Você está <strong>REPROVADO</strong>`
-    aviso.style.color = "#FF0000";
-
+    reprovado()
   } else{
-    media.style.color = "#0c6140";
-    resultado.innerText = `${mediaFinal}`;
-    resultado.style.color = "#0c6140";
-    aviso.innerHTML = `Você está <strong>APROVADO</strong>`;
-    aviso.style.color = "#0c6140";
+    aprovado()
   }
 });
 
 const removeContent = () => {
   enviar.classList.add("oculto")
   form.classList.add("oculto");
+}
+
+const mediaBase = () => {
+  mediaFinal = (
+    Number(entradaA1.value) * 0.15 +
+    Number(entradaA2.value) * 0.15 +
+    Number(entradaA3.value) * 0.4 +
+    Number(entradaA4.value) * 0.3
+  ).toFixed(2);
+}
+
+const aprovado = () => {
+  media.style.color = "#0c6140";
+  resultado.innerText = `${mediaFinal}`;
+  resultado.style.color = "#0c6140";
+  aviso.innerHTML = `Você está <strong>APROVADO</strong>`;
+  aviso.style.color = "#0c6140";
+}
+
+const reprovado = () => {
+  media.style.color = "#FF0000";
+    resultado.innerText = `${mediaFinal}`;
+    resultado.style.color = "#FF0000";
+    aviso.innerHTML = `Você está <strong>REPROVADO</strong>`
+    aviso.style.color = "#FF0000";
 }
